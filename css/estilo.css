@@ -11,7 +11,7 @@ body {
 :root{
     --corprimaria: #181828;
     --cinza: #D9D9D9;
-
+    
 }
 
 header{
@@ -45,10 +45,6 @@ header{
     cursor: pointer;
 }
 
-.explicacao{
-    margin: 50px;
-    margin-bottom: -30px;
-}
 #background{
     background-image: url("/img/8-harrypottermagia.png");
     background-size: cover;
@@ -73,10 +69,7 @@ header{
     width: 40%;
     font-size: 20px;
 }
-.vermais{
-    margin: 50px;
-    margin-bottom: -30px;
-}
+
 #aberturahogwarts{
     font-weight: bold;
     justify-items: center;
@@ -84,6 +77,8 @@ header{
     justify-content: center;
     height: 200px;
     display: grid;
+    font-size: 30px;
+    transform: translateY(13%);
 }
 #varinha{
     position: absolute;
@@ -92,4 +87,94 @@ header{
     justify-content: center;
     transform: translateY(-35%);
     
+}
+#hogwarts{
+    background-image: url("/img/3-paisagemhogwarts.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    display: grid;
+}
+#textohog{
+    color: white;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    font-size: 50px;
+    transform: translateY(105%);
+}
+#vermais{
+    justify-items: bottom;
+    align-items: bottom;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(250, 250, 250, 0.521);
+    height:150px;
+    transform: translateY(96.7%);
+}
+#linkhogwarts{
+    color:black;
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+#linkhogwarts:hover{
+    transform: scale(1.2);
+}
+#inicialautora{
+    background-color: var(--corprimaria);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    height: 5rem;
+    border-bottom: 1px solid;
+    border-color: white;
+}
+#tituloautora{
+    color: var(--cinza);
+    font-size: 35px;
+}
+#rowling{
+    background-color: var(--corprimaria);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+}
+#rowlingimg{
+    height: 25rem;
+    transform: translateX(-20%);
+}
+#rowlingnome{
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(20%);
+}
+#nomeprincipal{
+    font-size: 70px;
+}
+#falaevida{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+#falas{
+    display: grid;
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
 }
