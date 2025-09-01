@@ -12,6 +12,7 @@ body {
     --corprimaria: #181828;
     --cinza: #D9D9D9;
     
+    
 }
 
 header{
@@ -20,31 +21,39 @@ header{
     background-color: var(--corprimaria);
     height: 5rem;
     align-items: center;
-    padding: 20px 20rem;
+    padding: 20px 25rem;
 }
 
 #logo{
     color: white;
+    font-family: 'Princess Sofia';
+    font-size: 35px;
+    font-weight: normal;
+    padding-right: 25px;
 }
 
 #menu{
     width: 35rem;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: space-between;
     align-items: center;
-    
+    list-style-type: none;
 }
-  
+#menu img{
+    transform: translateY(20%);
+    height:30px;
+}
 #menu a{
-    
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
     cursor: pointer;
+    
 }
-
+#menu li{
+    transition: transform 0.3s ease;
+}
+#menu li:hover{
+    transform: scale(1.2);
+}
 #background{
     background-image: url("/img/8-harrypottermagia.png");
     background-size: cover;
@@ -57,17 +66,22 @@ header{
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--cinza);
 }
 #saga img{
     padding-bottom: 55px;
 }
 #sagatitulo{
     font-size: 40px;
+    font-family: 'italianno';
+    font-size: 80px;
+    font-weight: normal;
 }
 #sagaexplicacao{
     width: 40%;
     font-size: 20px;
+    font-family: 'poppins';
+    text-align: center;
 }
 
 #aberturahogwarts{
@@ -79,6 +93,7 @@ header{
     display: grid;
     font-size: 30px;
     transform: translateY(13%);
+    font-family: 'poppins';
 }
 #varinha{
     position: absolute;
@@ -86,6 +101,7 @@ header{
     align-items: center;
     justify-content: center;
     transform: translateY(-35%);
+    width: 97%
     
 }
 #hogwarts{
@@ -105,6 +121,7 @@ header{
     display: flex;
     font-size: 50px;
     transform: translateY(105%);
+    font-family: 'poppins';
 }
 #vermais{
     justify-items: bottom;
@@ -114,6 +131,7 @@ header{
     background-color: rgba(250, 250, 250, 0.521);
     height:150px;
     transform: translateY(96.7%);
+    font-family: 'poppins';
 }
 #linkhogwarts{
     color:black;
@@ -140,7 +158,9 @@ header{
 }
 #tituloautora{
     color: var(--cinza);
-    font-size: 35px;
+    font-size: 80px;
+    font-family: 'italianno';
+    font-weight: normal;
 }
 #rowling{
     background-color: var(--corprimaria);
@@ -149,6 +169,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 35rem;
+    font-family: 'poppins';
 }
 #rowlingimg{
     height: 25rem;
@@ -163,18 +184,108 @@ header{
     transform: translateX(20%);
 }
 #nomeprincipal{
-    font-size: 70px;
+    font-size: 80px;
+    font-family: 'praise';
+    letter-spacing: 10px;
+    font-weight: normal;
 }
 #falaevida{
     display: flex;
     justify-items: center;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    height: 25rem;
+    margin: 50px;
+    margin-bottom: -30px;
+    gap: 30px;
+    font-family: 'poppins';
 }
 #falas{
+    background-color: var(--corprimaria);
     display: grid;
-    width: 50px;
+    border-radius: 50px;
+    color: white;
+    width: 35rem;
+    height: 25rem;
+}
+#frases{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+#vida{
+    display: grid;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 35rem;
+    height: 25rem;
+    text-align: justify;
+}
+#suavida{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#cachecol{
+    height: 35rem;
+    width: 100%;
+}
+#areafilme{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+#botaofilme{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corprimaria);
+    width: 25rem;
+    height: 20rem;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+#linkfilme{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    font-family: 'potta one';
+}
+#linkfilme:hover{
+    transform: scale(2.0);
+}
+footer{
+    background-color: var(--corprimaria);
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    font-family: 'princess sofia';
+    font-weight: normal;
+    font-size: 20px;
+}
+#redes{
+    cursor: pointer;
+    display: flex;
+    gap: 25px;
     height: 50px;
-    border: 5px solid;
+    width: 50px;
+    transform: translateX(-145%);
+}
+#redes img{
+    transition: transform 0.3s ease;
+}
+#redes img:hover{
+    transform: scale(1.5);
 }
