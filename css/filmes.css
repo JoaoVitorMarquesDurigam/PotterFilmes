@@ -12,7 +12,7 @@ body {
     --corprimaria: #181828;
     --cinza: #D9D9D9;
     --corfilmes: rgba(24, 24, 40, 0.603);
-    
+    --cinzaescuro: #2B2B2B;
 }
 
 header{
@@ -109,8 +109,10 @@ header{
     color: var(--cinza);
     display: grid;
     justify-items: center;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    border-bottom: 1px solid;
+    border-color: var(--cinza);
 }
 #tituloresumo{
     display:flex;
@@ -120,14 +122,49 @@ header{
     border-bottom: 1px solid;
     border-color: var(--cinza);
     width: 50rem;
-    /* só isso que ele faz */
+    /* essa é a linha embaixo do titulo resumo */
 }
 #filmeresumo{
     text-align: justify;
     width: 50rem;
+    transform: translateY(-50%);
+    padding-left: 40px;
+    
 }
-
-
+#atores{
+    background-color: var(--corprimaria);
+    height: 80rem;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#principalatorestitulo{
+    color: var(--cinza);
+    font-family: 'jua';
+    font-size: 30px;
+}
+#principaisatores{
+    background-color: var(--cinzaescuro);
+    height: 70rem;
+    width: 70rem;
+    border-radius: 15px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: var(--cinza);
+}
+#atoresflex{
+    display: flex;
+    gap: 20px;
+}
+.caixaator{
+    background-color: white;
+    width: 20rem;
+    height: 25rem;
+}
 
 
 
