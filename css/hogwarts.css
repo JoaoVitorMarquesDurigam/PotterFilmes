@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza);
+  }
+
+:root{
+    --corprimaria: #181828;
+    --cinza: #D9D9D9;
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--corprimaria);
+    height: 5rem;
+    align-items: center;
+    padding: 20px 25rem;
+}
+
+#logo{
+    color: white;
+    font-family: 'Princess Sofia';
+    font-size: 35px;
+    font-weight: normal;
+    padding-right: 25px;
+}
+
+#menu{
+    width: 35rem;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+#menu img{
+    transform: translateY(20%);
+    height:30px;
+}
+#menu a{
+    cursor: pointer;
+    
+}
+#menu li{
+    transition: transform 0.3s ease;
+}
+#menu li:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--corprimaria);
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    font-family: 'princess sofia';
+    font-weight: normal;
+    font-size: 20px;
+}
+#redes{
+    cursor: pointer;
+    display: flex;
+    gap: 25px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-145%);
+}
+#redes img{
+    transition: transform 0.3s ease;
+}
+#redes img:hover{
+    transform: scale(1.5);
+}

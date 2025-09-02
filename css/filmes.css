@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins';
+    background-color: var(--cinza);
+}
+
+:root{
+    --corprimaria: #181828;
+    --cinza: #D9D9D9;
+    --corfilmes: rgba(24, 24, 40, 0.603);
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--corprimaria);
+    height: 5rem;
+    align-items: center;
+    padding: 20px 25rem;
+}
+
+#logo{
+    color: white;
+    font-family: 'Princess Sofia';
+    font-size: 35px;
+    font-weight: normal;
+    padding-right: 25px;
+}
+
+#menu{
+    width: 35rem;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+#menu img{
+    transform: translateY(20%);
+    height:30px;
+}
+#menu a{
+    cursor: pointer;
+    
+}
+#menu li{
+    transition: transform 0.3s ease;
+}
+#menu li:hover{
+    transform: scale(1.2);
+}
+#filmes{
+    background-image: url("/img/28-paisagemhogwartsfilmes.png");
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#titulofilme{
+    color:white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corfilmes);
+    width: 55rem;
+    height: 5rem;
+    font-size: 27px;
+    border-radius: 15px;
+}
+#mostrarfilme{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#capas{
+    background-color: var(--corfilmes);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    height: 27rem;
+    border-radius: 15px;
+}
+#dadosfilme{
+    color: var(--cinza);
+    width: 40rem;
+    height: 27rem;
+    background-color: var(--corfilmes);
+    border-radius: 15px;
+}
+#resumo{
+    background-color: var(--corprimaria);
+    height: 40rem;
+    border-top: 1px solid;
+    border-color: var(--cinza);
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    justify-content: left;
+    align-items: center;
+}
+#tituloresumo{
+    display:flex;
+    font-size: 24px;
+}
+#resumoh1{
+    border-bottom: 1px solid;
+    border-color: var(--cinza);
+    width: 50rem;
+    /* só isso que ele faz */
+}
+#filmeresumo{
+    text-align: justify;
+    width: 50rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
