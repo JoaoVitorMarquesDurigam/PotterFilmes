@@ -142,7 +142,7 @@ header{
 #principalatorestitulo{
     color: var(--cinza);
     font-family: 'jua';
-    font-size: 30px;
+    font-size: 35px;
 }
 #principaisatores{
     background-color: var(--cinzaescuro);
@@ -163,7 +163,46 @@ header{
 .caixaator{
     background-color: white;
     width: 20rem;
+    height: 30rem;
+    border-radius: 16px;
+    display:grid;
+    
+}
+.caixaator img{
     height: 25rem;
+    width: 20rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.caixaator p{
+    display: flex;
+    padding-left: 25px;
+}
+
+#atoressec{
+    background-color: var(--corprimaria);
+    height: 80rem;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#secundarioatores{
+    background-color: var(--cinzaescuro);
+    height: 70rem;
+    width: 70rem;
+    border-radius: 15px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: var(--cinza);
+}
+#secundarioatorestitulo{
+    color: var(--cinza);
+    font-family: 'jua';
+    font-size: 35px;
 }
 
 
@@ -182,8 +221,33 @@ header{
 
 
 
-
-
+footer{
+    background-color: var(--corprimaria);
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    font-family: 'princess sofia';
+    font-weight: normal;
+    font-size: 20px;
+    border-top: 1px solid;
+}
+#redes{
+    cursor: pointer;
+    display: flex;
+    gap: 25px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-145%);
+}
+#redes img{
+    transition: transform 0.3s ease;
+}
+#redes img:hover{
+    transform: scale(1.5);
+}
 
 
 
