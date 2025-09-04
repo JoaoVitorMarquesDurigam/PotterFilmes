@@ -60,7 +60,29 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: grid;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+#setadireita{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#setadireita:hover{
+    transform: scale(1.5);
+}
+#setaesquerda{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#setaesquerda:hover{
+    transform: scale(1.5);
+}
+#filmesgrid{
+    display:grid;
+    gap: 50px;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -100,6 +122,17 @@ header{
     height: 27rem;
     background-color: var(--corfilmes);
     border-radius: 15px;
+}
+#rating{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+#estrelas{
+    display:flex;
 }
 #resumo{
     background-color: var(--corprimaria);
@@ -162,7 +195,7 @@ header{
 }
 .caixaator{
     background-color: white;
-    width: 20rem;
+    width: 15rem;
     height: 30rem;
     border-radius: 16px;
     display:grid;
@@ -170,7 +203,7 @@ header{
 }
 .caixaator img{
     height: 25rem;
-    width: 20rem;
+    width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
