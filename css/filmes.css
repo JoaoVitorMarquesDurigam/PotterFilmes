@@ -69,6 +69,9 @@ header{
 #setadireita{
     cursor: pointer;
     transition: transform 0.3s ease;
+    background-color: var(--corfilmes);
+    border-radius: 15px;
+    border: 0px;
 }
 #setadireita:hover{
     transform: scale(1.5);
@@ -76,6 +79,9 @@ header{
 #setaesquerda{
     cursor: pointer;
     transition: transform 0.3s ease;
+    background-color: var(--corfilmes);
+    border-radius: 15px;
+    border: 0px;
 }
 #setaesquerda:hover{
     transform: scale(1.5);
@@ -118,18 +124,26 @@ header{
 }
 #dadosfilme{
     color: var(--cinza);
-    width: 40rem;
+    width: 50rem;
     height: 27rem;
     background-color: var(--corfilmes);
     border-radius: 15px;
+    display: grid;
+    justify-content: left;
+    
 }
 #rating{
     display: flex;
     justify-items: center;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 30px;
     font-size: 20px;
+    transform: translateX(5%);
+}
+#dados{
+    font-size: 25px;
+    transform: translateX(6%);
 }
 #estrelas{
     display:flex;
@@ -193,7 +207,7 @@ header{
     display: flex;
     gap: 20px;
 }
-.caixaator{
+#caixaator{
     background-color: white;
     width: 15rem;
     height: 30rem;
@@ -201,13 +215,13 @@ header{
     display:grid;
     
 }
-.caixaator img{
+#caixaator img{
     height: 25rem;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.caixaator p{
+#caixaator p{
     display: flex;
     padding-left: 25px;
 }
