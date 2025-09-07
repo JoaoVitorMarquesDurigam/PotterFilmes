@@ -59,6 +59,85 @@ header{
 
 
 
+#hogwarts-intro{
+    height: 65rem;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+
+#imagem-fundo{
+    background-image: url("/img/28-paisagemhogwartsfilmes.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card-principal{
+    align-items: center;
+    background-color: #181828;
+    justify-content: center;
+    justify-self: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--corprimaria);
+    color: var(--cinza);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    font-family: 'princess sofia';
+    font-weight: normal;
+    font-size: 20px;
+}
+#redes{
+    cursor: pointer;
+    display: flex;
+    gap: 25px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-145%);
+}
+#redes img{
+    transition: transform 0.3s ease;
+}
+#redes img:hover{
+    transform: scale(1.5);
+}
+
 
 
 
