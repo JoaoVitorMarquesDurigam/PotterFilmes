@@ -69,7 +69,7 @@ header{
 #setadireita{
     cursor: pointer;
     transition: transform 0.3s ease;
-    background-color: var(--corfilmes);
+    background-color: #18182800;
     border-radius: 15px;
     border: 0px;
 }
@@ -79,7 +79,7 @@ header{
 #setaesquerda{
     cursor: pointer;
     transition: transform 0.3s ease;
-    background-color: var(--corfilmes);
+    background-color: #18182800;
     border-radius: 15px;
     border: 0px;
 }
@@ -145,9 +145,7 @@ header{
     font-size: 25px;
     transform: translateX(6%);
 }
-#estrelas{
-    display:flex;
-}
+
 #resumo{
     background-color: var(--corprimaria);
     height: 40rem;

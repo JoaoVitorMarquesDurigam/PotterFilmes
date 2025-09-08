@@ -155,6 +155,7 @@ header{
     justify-self: center;
     font-weight: bold;
     width: 80%;
+    font-size: 30px;
 }
 #cards-main{
     display: grid;
@@ -236,13 +237,184 @@ header{
     width: 90%;
     font-size: 30px;
 }
+/*Começo da confusão. Vou separar por partes.*/
+#titulo{
+    background-color: var(--corprimaria);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    font-size: 50px;
+    color: var(--cinza);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--cinza);
+}
 
+#fatos{
+    background-color: var(--corprimaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#imgscards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: var(--cinza);
+    width: 30%;
+}
+#paragrafofatos{
+    width: 60%;
+}
+#varinhastitulo{
+    font-family: 'Irish Grover';
+}
 
+/*quadribol que tem seus propios ids pq decidiram que ele vai ter cinco cards :(*/
+#quadriboltitulo{
+    font-family: 'Island Moments';
+    font-size: 75px;
+}
+#quadrifatos, #quadrifatos2{
+    background-color: var(--corprimaria);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#quadrifatos2{
+    display: flex;
+    gap: 40px;
+}
 
+/*cores.*/
 
-
-
-
+#vermelho1{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #810D20;
+    
+}
+#amarelo1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #EA9000;
+    transform: translateX(-115%);
+}
+#vermelho2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #810D20;
+    transform: translateX(115%);
+}
+#amarelo2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #EA9000;
+}
+#verde1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #1B3D00;
+}
+#verde2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #1B3D00;
+    transform: translateX(115%)
+}
+#cinza1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: var(--cinza);
+    transform: translateX(-115%);
+}
+#cinza2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: var(--cinza);
+}
+#amarquadri1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #EA9000;
+}
+#amarquadri2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: #EA9000;
+}
+#preto1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: black;
+    transform: translateX(-115%);
+}
+#preto2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    justify-items: center;
+    width: 10%;
+    height: 4.7rem;
+    background-color: black;
+    transform: translateX(115%)
+}
 
 
 
@@ -264,7 +436,9 @@ footer{
     height: 13rem;
     font-family: 'princess sofia';
     font-weight: normal;
-    font-size: 20px;
+    font-size: 20px; 
+    border-top: 5px solid;
+    border-color: var(--cinza);
 }
 #redes{
     cursor: pointer;
@@ -303,31 +477,3 @@ footer{
 
 
 
-
-
-footer{
-    background-color: var(--corprimaria);
-    color: var(--cinza);
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    height: 13rem;
-    font-family: 'princess sofia';
-    font-weight: normal;
-    font-size: 20px;
-}
-#redes{
-    cursor: pointer;
-    display: flex;
-    gap: 25px;
-    height: 50px;
-    width: 50px;
-    transform: translateX(-145%);
-}
-#redes img{
-    transition: transform 0.3s ease;
-}
-#redes img:hover{
-    transform: scale(1.5);
-}
