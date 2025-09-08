@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'poppins';
     background-color: var(--cinza);
   }
 
 :root{
     --corprimaria: #181828;
     --cinza: #D9D9D9;
+     --corfilmes: rgba(24, 24, 40, 0.603);
+    --cinzaescuro: #2B2B2B;
     
     
 }
@@ -60,39 +62,180 @@ header{
 
 
 #hogwarts-intro{
-    height: 65rem;
+    background-image: url("/img/3-paisagemhogwarts.png");
+    height: 30rem;
     width: 100%;
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     justify-items: center;
-    
-}
-
-#imagem-fundo{
-    background-image: url("/img/28-paisagemhogwartsfilmes.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #card-principal{
+    display:flex;
     align-items: center;
     background-color: #181828;
     justify-content: center;
     justify-self: center;
+    color: var(--cinza);
+    border-radius: 15px;
+    height: 10rem;
+    width: 60rem;
+    transform: translateY(75%);
     
 }
-
-
-
-
-
-
-
-
-
-
-
+#p-explicacao{
+    justify-content: center;
+    justify-self: center;
+    display:flex;
+    align-items: center;
+    font-size: 18px;
+}
+#hogbold{
+    font-weight: bold;
+    justify-content: center;
+    justify-self: center;
+    display:flex;
+    align-items: center;
+}
+#spoiler{
+    background-color: var(--cinzaescuro);
+    color: var(--cinza);
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    display:flex;
+    width: 100%;
+    height: 2rem;
+    font-size: 20px;
+}
+#hogwarts-explicacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap:100px;
+    border-bottom: 5px solid;
+}
+#texto-explicativo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 40%;
+    font-size: 30px;
+    text-align: center;
+}
+#alunos{
+    transform: translateY(1%)
+}
+#ascasas{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    height: 100rem;
+    gap: 10px;
+}
+#casastitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    font-size: 80px;
+    font-family: "Julius Sans One";
+    font-weight: normal;
+}
+#introcasas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    font-weight: bold;
+    width: 80%;
+}
+#cards-main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 150px;
+}
+.cards-casas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 150px;
+}
+.grifinoria{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #810D20;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow:  0px 0px 10px 15px #EA9000;
+    color: var(--cinza);
+}
+.sonserina{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #1B3D00;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow:  0px 0px 10px 15px #A3A3A3;
+    color: var(--cinza);
+}
+.lufalufa{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #EA9000;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow:  0px 0px 10px 15px var(--cinzaescuro);
+    color: var(--cinza);
+}
+.corvinal{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #004570;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow:  0px 0px 10px 15px #2b2b2b9f;
+    border: 5px solid;
+    border-color: white;
+    color: var(--cinza);
+}
+#casastitulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 25px;
+    font-family: 'IM Fell Double Pica SC'
+}
+#textocasas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    font-size: 30px;
+}
 
 
 
