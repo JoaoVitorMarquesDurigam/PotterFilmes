@@ -21,7 +21,7 @@ header{
     background-color: var(--corprimaria);
     height: 5rem;
     align-items: center;
-    padding: 20px 25rem;
+    justify-content: center;
 }
 
 #logo{
@@ -30,6 +30,7 @@ header{
     font-size: 35px;
     font-weight: normal;
     padding-right: 25px;
+    
 }
 
 #menu{
@@ -44,14 +45,18 @@ header{
     transform: translateY(20%);
     height:30px;
 }
-#menu a{
+#links{
+    display: flex;
+    justify-content: center;
+}
+#links a{
     cursor: pointer;
     
 }
-#menu li{
+#links li{
     transition: transform 0.3s ease;
 }
-#menu li:hover{
+#links li:hover{
     transform: scale(1.2);
 }
 #filmes{
@@ -66,24 +71,27 @@ header{
     align-items: center;
     gap:100px;
 }
-#setadireita{
+#setadireita, #setadireitamob{
     cursor: pointer;
     transition: transform 0.3s ease;
     background-color: #18182800;
     border-radius: 15px;
     border: 0px;
 }
-#setadireita:hover{
+#setadireitamob, #setaesquerdamob{
+    display: none;
+}
+#setadireita:hover, #setadireitamob:hover{
     transform: scale(1.5);
 }
-#setaesquerda{
+#setaesquerda, #setaesquerdamob{
     cursor: pointer;
     transition: transform 0.3s ease;
     background-color: #18182800;
     border-radius: 15px;
     border: 0px;
 }
-#setaesquerda:hover{
+#setaesquerda:hover, #setaesquerdamob:hover{
     transform: scale(1.5);
 }
 #filmesgrid{
@@ -100,7 +108,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: var(--corfilmes);
-    width: 55rem;
+    width: 70rem;
     height: 5rem;
     font-size: 27px;
     border-radius: 15px;
@@ -118,9 +126,12 @@ header{
     justify-items: center;
     justify-content: center;
     align-items: center;
-    width: 23rem;
-    height: 27rem;
+    width: 25rem;
+    height: 30rem;
     border-radius: 15px;
+}
+#capafilme{
+    width: 20rem;
 }
 #dadosfilme{
     color: var(--cinza);
@@ -294,7 +305,77 @@ footer{
     transform: scale(1.5);
 }
 
-
+@media(max-width: 700px){
+    body{
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+        padding-right: 0px;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    #links{
+        padding-bottom: 20px;
+        padding-left: 25px;
+        justify-content: space-between;
+    }
+    #filmes, #filmesgrid, #mostrarfilme, #dadosfilme{
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+    }
+    #filmes{
+        padding-bottom: 25px;
+    }
+    #filmesgrid, #mostrarfilme, #dadosfilme{
+        width: 95%;
+        justify-content: center;
+    }
+    #dadosfilme{
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+    #titulofilme{
+        width: 100%;
+        justify-self: center;
+    }
+    #estrelas{
+        display: flex;
+        height: 2rem;
+    }
+    #setadireitamob, #setaesquerdamob{
+        display: flex;
+    }
+     #setadireita, #setaesquerda{
+        display: none;
+    }
+    #setasemmobile{
+        display: flex;
+        gap: 50px;
+    }
+    #resumo{
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    #tituloresumo, #resumoh1{
+        width: 100%;
+        height: 100%;
+    }
+    #filmeresumo{
+        transform: translateY(0%);
+        padding-left: 0px;
+        width: 90%;
+        height: 100%;
+        padding-top: 25px;
+    }
+}
 
 
 

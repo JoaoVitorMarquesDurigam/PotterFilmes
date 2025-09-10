@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'poppins';
     background-color: var(--cinza);
 }
 
@@ -21,7 +21,9 @@ header{
     background-color: var(--corprimaria);
     height: 5rem;
     align-items: center;
-    padding: 20px 25rem;
+    justify-content: center;
+    
+    
 }
 
 #logo{
@@ -30,10 +32,13 @@ header{
     font-size: 35px;
     font-weight: normal;
     padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu{
-    width: 35rem;
+    width: 100%;
     display: flex;
     gap: 25px;
     justify-content: space-between;
@@ -44,14 +49,18 @@ header{
     transform: translateY(20%);
     height:30px;
 }
-#menu a{
+#links{
+    display: flex;
+    justify-content: center;
+}
+#links a{
     cursor: pointer;
     
 }
-#menu li{
+#links li{
     transition: transform 0.3s ease;
 }
-#menu li:hover{
+#links li:hover{
     transform: scale(1.2);
 }
 #background{
@@ -208,7 +217,7 @@ header{
     width: 35rem;
     height: 25rem;
 }
-#frases{
+#frases1, #frases2, #suavida{
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -223,12 +232,6 @@ header{
     width: 35rem;
     height: 25rem;
     text-align: justify;
-}
-#suavida{
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
 }
 #cachecol{
     height: 35rem;
@@ -288,4 +291,89 @@ footer{
 }
 #redes img:hover{
     transform: scale(1.5);
+}
+
+@media(max-width: 700px){
+    body{
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+        padding-right: 0px;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    #links{
+        padding-bottom: 20px;
+        padding-left: 25px;
+        justify-content: space-between;
+    }
+    #background{
+        border-top: 1px solid;
+        border-color: white;
+        width: 100%;
+        background-image: none;
+        background-color: var(--corprimaria);
+        height: 100%;
+    }
+    #sagatitulo{
+       font-size: 65px;
+    }
+    #sagaexplicacao{
+        font-size: 20px;
+        width: 70%;
+        text-align: left;
+    }
+    #saga img{
+    padding-bottom: 55px;
+    width: 90%;
+    }
+    #varinha, #cachecol{
+        display: none;
+    }
+    #aberturahogwarts{
+        font-size: 20px;
+        transform: translateY(0%);
+        width: 95%;
+        justify-self: center;
+    }
+    #hogwarts{
+        width: 100%;
+    }
+    #rowling{
+        display:grid;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+    }
+    #rowlingimg{
+        transform: translateX(0%);
+        padding-top: 40px;
+    }
+    #rowlingnome{
+        width: 100%;
+        transform: translateX(0%);
+    }
+    #nomeprincipal{
+        font-size: 65px;
+    }
+    #falaevida{
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        height: auto;
+        width: auto;
+    }
+    #falas, #vida{
+        width: 100%;
+        height: 100%;
+    }
+    #frases2, #suavida{
+        padding-bottom: 25px;
+        text-align: left;
+    }
 }

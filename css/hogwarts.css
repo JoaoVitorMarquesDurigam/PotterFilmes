@@ -19,11 +19,10 @@ body {
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--corprimaria);
     height: 5rem;
     align-items: center;
-    padding: 20px 25rem;
 }
 
 #logo{
@@ -46,14 +45,18 @@ header{
     transform: translateY(20%);
     height:30px;
 }
-#menu a{
+#links{
+    display: flex;
+    justify-content: center;
+}
+#links a{
     cursor: pointer;
     
 }
-#menu li{
+#links li{
     transition: transform 0.3s ease;
 }
-#menu li:hover{
+#links li:hover{
     transform: scale(1.2);
 }
 
@@ -92,13 +95,6 @@ header{
     display:flex;
     align-items: center;
     font-size: 18px;
-}
-#hogbold{
-    font-weight: bold;
-    justify-content: center;
-    justify-self: center;
-    display:flex;
-    align-items: center;
 }
 #spoiler{
     background-color: var(--cinzaescuro);
@@ -263,7 +259,7 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#imgscards{
+#imgscards, #imgscardstop{
     display: grid;
     justify-content: center;
     align-items: center;
@@ -455,7 +451,91 @@ footer{
     transform: scale(1.5);
 }
 
-
+@media(max-width: 700px){
+    body{
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+    #logo{
+        padding-right: 0px;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    #links{
+        padding-bottom: 20px;
+        padding-left: 25px;
+        justify-content: space-between;
+    }
+    #card-principal, #p-explicacao{
+        width: 95%;
+    }
+    #p-explicacao{
+        text-align: left;
+    }
+    #hogwarts-explicacao{
+        gap: 0px;
+    }
+    #texto-explicativo{
+        width: 90%;
+        font-size: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #alunos{
+        display: none;
+        transform: translateY(0%)
+    }
+    #ascasas{
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+    #introcasas{
+        width: 80%;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .cards-casas{
+        flex-direction: column;
+    }
+    .grifinoria, .sonserina, .corvinal, .lufalufa{
+        width: 90%;
+    }
+    #titulo{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    #verde1, #verde2, #cinza1, #cinza2, #vermelho1, #vermelho2, #amarelo1, #amarelo2, #preto1, #preto2, #amarquadri1, #amarquadri2{
+        display: none;
+        transform: translateX(0%);
+    }
+    #fatos, #quadrifatos{
+        flex-direction: column;
+        gap: 35px;
+    }
+    #imgscards, #imgscardstop{
+        gap: 45px;
+        width: 100%;
+        border-top: 1px solid;
+    }
+    #imgscardstop{
+        border-top: 0px solid;
+    }
+    #imgscards img{
+        padding-top: 25px;
+    }
+    #paragrafofatos{
+        width: 90%;
+    }
+    #quadrifatos2{
+        flex-direction: column;
+    }
+}
 
 
 
