@@ -22,14 +22,17 @@ const mudaratodesc4 = document.querySelector(".atordesc4")
 const mudaratodesc5 = document.querySelector(".atordesc5")
 const mudaratodesc6 = document.querySelector(".atordesc6")
 
-let numfilme = 1
+const mudarresumo = document.querySelector(".textoresumo")
 
+let numfilme = 1
+let opacidade = 1
 function filmeavancar(){
     if(8 > numfilme){
         numfilme++
         console.log(numfilme)
         mudardados()
         mudaratores()
+        resumofilmes()
     }
     else{
         numfilme = 8
@@ -41,12 +44,30 @@ function filmevoltar(){
         console.log(numfilme)
         mudardados()
         mudaratores()
+        resumofilmes()
     }
     else{
         numfilme = 1
     }
 }
 
+function fadein{
+    if(opacidade = 1){
+        const intervalo = setInterval(() => {
+            if (opacity >= 1) {
+                clearInterval(intervalo)
+            }
+            mudartitulo.style.opacity = opacity
+            mudarcapa.style.opacity = opacity
+            mudaravaliacao.style.opacity = opacity
+            mudarlanca.style.opacity = opacity
+            mudarloca.style.opacity = opacity
+            mudardire.style.opacity = opacity
+            mudarprod.style.opacity = opacity
+            mudarnumato.style.opacity = opacity
+        }, interval);
+    }
+}
 
 function mudardados(){
     if(numfilme == 1){
@@ -128,6 +149,33 @@ function mudardados(){
         mudardire.textContent = "Diretor: David Yates"
         mudarprod.textContent = "Produtor: David Heyman"
         mudarnumato.textContent = "Numero de Atores: 30"
+    }
+}
+
+function resumofilmes(){
+    if(numfilme == 1){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 2){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 3){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 4){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 5){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 6){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 7){
+    mudarresumo.textContent = ""
+    }
+    if(numfilme == 8){
+    mudarresumo.textContent = ""
     }
 }
 
