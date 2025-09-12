@@ -132,7 +132,7 @@ header{
     justify-content: center;
     align-items: center;
     justify-self: center;
-    height: 100rem;
+    height: 100%;
     gap: 10px;
 }
 #casastitulo{
@@ -159,6 +159,7 @@ header{
     align-items: center;
     justify-self: center;
     gap: 150px;
+    padding-top: 100px;
 }
 .cards-casas{
     display: flex;
@@ -166,6 +167,16 @@ header{
     align-items: center;
     justify-self: center;
     gap: 150px;
+}
+#nomecasas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; 
+    gap: 50px;
+    font-size: 40px;
+    font-weight: bold;
 }
 .grifinoria{
     display: grid;
@@ -536,24 +547,3 @@ footer{
         flex-direction: column;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

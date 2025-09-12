@@ -142,28 +142,28 @@ function mudardados(){
 
 function resumofilmes(){
     if(numfilme == 1){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "Harry Potter é um garoto orfão de 11 que vive junto com seus tios, os Dursley, dentro de condições ruims. Um dia, harry varias cartas de convite para Hogwarts, uma renomada escola de magia. Em hogwarts, harry aprende sobre o mundo dos bruxos, sua conexão com o temido bruxo voldemort, a verdade sobre a morte de seus pais e faz dois grandes amigos, Ron Weasley e Hermione Granger, enquanto tentam defender a pedra filosofal de cair em mãos erradas. Esse filme serve como a introdução ao universo de harry potter, estabelecendo os protagonistas e antagonistas, junto com como mundo da magia funciona."
     }
     if(numfilme == 2){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "Após passar um verão horrivel na casa de seus tios sem poder usar magia e sem receber cartas de seus novos amigos, Harry encontra Dobby, um elfo-doméstico que esteve interceptando todas as cartas enviadas por Ron e Hermione para Impedir harry de voltar para hogwarts, pois ele vai entrar em um perigo mortal caso volte. Harry, sentindo saudade de hogwarts e seus amigos, ignora os avisos de Dobby e decide voltar a hogwarts. Após uma serie da acontecimentos na escola de magia, Harry e seus amigos decidem procurar a raiz dos acontecimentos, assim descobrindo sobre a existencia de uma camara secreta dentro de hogwarts."
     }
     if(numfilme == 3){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "Com mais um verão insatisfatorio na casa de seus tios, Harry, enquando lé um livro usando o feitiço Lumos Maxima, ouve sua tia Guida Dursley insultar seus pais, o que faz harry perder a paciência. Como vingança, harry causa sua tia a inflar e flutuar como um balão. Harry decide fugir da casa de seus tios, indo para o Caldeirão Furado para ser perdoado por usar magia fora de hogwarts. Logo após, harry descobre que um servo de Voldemort, Sirius Black, está a sua procura. Durante o trem para hogwarts, o trio é atacado por Dementadores, mas são salvos pelo novo professor de magia, Remo Lupin, porem harry desmaia por causa do ataque."
     }
     if(numfilme == 4){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "Enquanto Harry, junto de seus amigos, visitam a Copa Mundial de Quadribol até que o acampamento deles é atacado pelos Comensais da morte, antigos servos de voldemort. Sendo nocauteado durante a fuga, Harry ouve alguem invocar o simbolo de voldemort, a marca negra, antes de ser salvo por Hermione e Ron. Logo após isso, Dumbledore informa aos alunos que o torneio Tribruxo terá hogwarts como sua sede. Com isso, duas outras escolas chegam em hogwarts para competir,  Beauxbatons e Durmstrang. A cálice escolha treis alunos para representar suas escolhas, mas um quarto escolhe um quarto campeão, para a surpresa de todos."
     }
     if(numfilme == 5){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "No quinto ano de Harry Potter em Hogwarts, o mundo bruxo se recusa a acreditar que Lord Voldemort retornou. Ignorado pelo Ministério da Magia e assombrado por pesadelos sombrios, Harry enfrenta um novo e opressor regime na escola, liderado pela cruel professora Dolores Umbridge. Com a ajuda de seus amigos Rony e Hermione, ele forma a Armada de Dumbledore, um grupo secreto de estudantes que aprende a se defender contra as artes das trevas. Enquanto isso, a misteriosa Ordem da Fênix, uma sociedade secreta que luta contra Voldemort,se mobiliza nas sombras."
     }
     if(numfilme == 6){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "Em seu sexto ano em Hogwarts, Harry descobre mais sobre o passado de Lord Voldemort com a ajuda do professor Dumbledore, que o prepara para a batalha final. Enquanto isso, um antigo livro de Poções pertencente a um misterioso “Príncipe Mestiço” dá a Harry habilidades surpreendentes — mas também o aproxima de segredos perigosos. O perigo se infiltra na escola, Draco Malfoy age em segredo, e um plano sombrio ameaça o coração de Hogwarts. No meio disso tudo, o amor e a perda se entrelaçam, marcando o início do fim para o mundo bruxo como Harry conhece."
     }
     if(numfilme == 7){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "O mundo bruxo mergulha no caos. Voldemort assumiu o controle do Ministério da Magia e está caçando todos os que se opõem a ele — especialmente Harry Potter. Sem a proteção de Hogwarts, Harry, Rony e Hermione partem em uma perigosa missão para destruir as Horcruxes, fragmentos da alma de Voldemort. Sozinhos, enfrentando traições, perdas e o peso de um futuro incerto, eles descobrem a lenda das Relíquias da Morte — três artefatos mágicos que podem mudar o rumo da guerra. Enquanto o perigo cresce e a esperança enfraquece, a amizade dos três é colocada à prova como nunca antes."
     }
     if(numfilme == 8){
-    mudarresumo.textContent = ""
+    mudarresumo.textContent = "No desfecho da saga, Harry, Rony e Hermione retornam a Hogwarts para destruir as últimas Horcruxes e acabar de vez com Voldemort. A escola se torna o campo de uma batalha épica entre as forças das trevas e aqueles que ainda resistem. Enquanto o mundo bruxo desmorona ao redor deles, verdades profundas são reveladas — sobre Dumbledore, Snape e o próprio Harry. Em meio a perdas dolorosas e atos de coragem, Harry precisa encarar seu destino: o confronto final com Voldemort."
     }
 }
 

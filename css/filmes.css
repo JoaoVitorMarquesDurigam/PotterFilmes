@@ -159,7 +159,7 @@ header{
 
 #resumo{
     background-color: var(--corprimaria);
-    height: 40rem;
+    height: 100%;
     border-top: 1px solid;
     border-color: var(--cinza);
     color: var(--cinza);
@@ -169,6 +169,9 @@ header{
     align-items: center;
     border-bottom: 1px solid;
     border-color: var(--cinza);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 25px;
 }
 #tituloresumo{
     display:flex;
@@ -183,8 +186,9 @@ header{
 #filmeresumo{
     text-align: justify;
     width: 50rem;
-    transform: translateY(-50%);
+    font-size: 18px;
     padding-left: 40px;
+    transform: translateX(-5%);
     
 }
 #atores{
@@ -370,7 +374,7 @@ footer{
         justify-content: center;
     }
     #filmeresumo{
-        transform: translateY(0%);
+        transform: translateX(0%);
         padding-left: 0px;
         width: 90%;
         height: 100%;

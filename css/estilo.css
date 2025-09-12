@@ -64,10 +64,12 @@ header{
     transform: scale(1.2);
 }
 #background{
+    height: 100%;
     background-image: url("/img/8-harrypottermagia.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 #saga{
     height: 65rem;
@@ -203,7 +205,7 @@ header{
     justify-items: center;
     align-items: center;
     justify-content: center;
-    height: 25rem;
+    height: 100%;
     margin: 50px;
     margin-bottom: -30px;
     gap: 30px;
@@ -232,10 +234,6 @@ header{
     width: 35rem;
     height: 25rem;
     text-align: justify;
-}
-#cachecol{
-    height: 35rem;
-    width: 100%;
 }
 #areafilme{
     display: flex;
@@ -293,6 +291,16 @@ footer{
     transform: scale(1.5);
 }
 
+#epicsecret{
+    opacity: 0;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+#aurafarm{
+    display: none;
+}
+
 @media(max-width: 700px){
     body{
         width: 100%;
@@ -331,7 +339,7 @@ footer{
     padding-bottom: 55px;
     width: 90%;
     }
-    #varinha, #cachecol{
+    #varinha{
         display: none;
     }
     #aberturahogwarts{
