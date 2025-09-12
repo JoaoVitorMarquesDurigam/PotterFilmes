@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Potta One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/filmes.css" rel="stylesheet">
     <script src="./js/filmes.js" defer></script>
 </head>
@@ -30,9 +31,9 @@
         <section>
             <div id="filmes">
                 <button onclick="filmevoltar()" id="setaesquerda"><img src="img/31-setaesquerda.png"></button>
-                <div id="filmesgrid">
+                <div id="filmesgrid" class="animate__animated animate__fadeIn">
                     <div id="titulofilme">
-                        <p>Harry Potter e a Pedra Filosofal</p>
+                        <p id="titulop" id="desaparecer" id="aparecer">Harry Potter e a Pedra Filosofal</p>
                     </div>
                     <div id="setasemmobile">
                         <button onclick="filmevoltar()" id="setaesquerdamob"><img src="img/31-setaesquerda.png"></button>
@@ -40,7 +41,7 @@
                     </div>
                     <div id="mostrarfilme">
                         <div id="capas">
-                            <img src="img/imgfilmes/1-capafilmepedrafilosofal.png" id="capafilme">
+                            <img src="img/imgfilmes/1-capafilmepedrafilosofal.png" id="capafilme" id="desaparecer" id="aparecer">
                         </div>
                         <div id="dadosfilme">
                             <div id="rating">
@@ -51,14 +52,14 @@
                                     <img src="img/32-estrela.png">
                                     <img src="img/32-estrela.png">
                                 </div>
-                                <p class="avaliacao">4.5</p>
-                                <p> Familia, Fantasia, Aventura.</p>
+                                <p class="avaliacao" id="desaparecer" id="aparecer">4.5</p>
+                                <p id="desaparecer" id="aparecer"> Familia, Fantasia, Aventura.</p>
                             </div>
-                            <p id="dados" class="lancamento">Lançamento: 23/11/2001</p>
-                            <p id="dados" class="localizacao">Localização: Reino Unido</p>
-                            <p id="dados" class="diretor">Diretor: Chris Columbus</p>
-                            <p id="dados" class="produtor">Produtor: David Heyman</p>
-                            <p id="dados" class="numatores">Numero de Atores: 25</p>
+                            <p id="dados" class="lancamento" >Lançamento: 23/11/2001</p>
+                            <p id="dados" class="localizacao" id="desaparecer" id="aparecer">Localização: Reino Unido</p>
+                            <p id="dados" class="diretor" id="desaparecer" id="aparecer">Diretor: Chris Columbus</p>
+                            <p id="dados" class="produtor" id="desaparecer" id="aparecer">Produtor: David Heyman</p>
+                            <p id="dados" class="numatores"id="desaparecer" id="aparecer">Numero de Atores: 25</p>
                         </div>
                     </div>
                 </div>

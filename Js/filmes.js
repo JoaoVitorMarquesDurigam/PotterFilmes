@@ -4,7 +4,7 @@ const mudardire = document.querySelector(".diretor")
 const mudarprod = document.querySelector(".produtor")
 const mudarnumato = document.querySelector(".numatores")
 const mudaravaliacao = document.querySelector(".avaliacao")
-const mudartitulo = document.querySelector("#titulofilme")
+const mudartitulo = document.querySelector("#titulop")
 const mudarcapa = document.querySelector("#capafilme")
 
 // Seção da dor, atores.
@@ -25,7 +25,8 @@ const mudaratodesc6 = document.querySelector(".atordesc6")
 const mudarresumo = document.querySelector(".textoresumo")
 
 let numfilme = 1
-let opacidade = 1
+/* let opacidade = 1 */
+
 function filmeavancar(){
     if(8 > numfilme){
         numfilme++
@@ -33,6 +34,7 @@ function filmeavancar(){
         mudardados()
         mudaratores()
         resumofilmes()
+        
     }
     else{
         numfilme = 8
@@ -41,33 +43,19 @@ function filmeavancar(){
 function filmevoltar(){
     if(1 < numfilme){
         numfilme--
+        
         console.log(numfilme)
         mudardados()
         mudaratores()
         resumofilmes()
+        
     }
     else{
         numfilme = 1
     }
 }
 
-function fadein{
-    if(opacidade = 1){
-        const intervalo = setInterval(() => {
-            if (opacity >= 1) {
-                clearInterval(intervalo)
-            }
-            mudartitulo.style.opacity = opacity
-            mudarcapa.style.opacity = opacity
-            mudaravaliacao.style.opacity = opacity
-            mudarlanca.style.opacity = opacity
-            mudarloca.style.opacity = opacity
-            mudardire.style.opacity = opacity
-            mudarprod.style.opacity = opacity
-            mudarnumato.style.opacity = opacity
-        }, interval);
-    }
-}
+
 
 function mudardados(){
     if(numfilme == 1){
