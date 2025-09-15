@@ -291,15 +291,7 @@ footer{
     transform: scale(1.5);
 }
 
-#epicsecret{
-    opacity: 0;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-#aurafarm{
-    display: none;
-}
+
 
 @media(max-width: 700px){
     body{
